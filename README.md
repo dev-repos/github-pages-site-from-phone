@@ -8,7 +8,19 @@ For GitHub Pages, publish the branch containing these files from its root direct
 
 ## Images
 
-`images/hero-plant-placeholder.svg`, `images/demo-plant-placeholder.svg`, and `images/sprig-placeholder.svg` are temporary illustrations. Replace them with real images and update the corresponding `src`, dimensions, and alt text in `index.html`. The sprig is decorative and should keep empty alt text. `images/sprout-mark.svg` is the small brand mark and favicon.
+The built-in image generation tool created the green-and-cream gouache illustrations. Final assets live in `images/`:
+
+- `hero-plant-small.webp` (600×640) and `hero-plant.webp` (900×960): responsive happy plant being watered.
+- `feature-reminders.webp`, `feature-pace.webp`, and `feature-tracking.webp` (600×400): the three feature illustrations.
+- `demo-fern.webp` (600×400): Fernanda in the interactive preview.
+- `social-preview.jpg` (1200×630): Open Graph and Twitter link-sharing card.
+- `sprout-mark.svg`: brand mark and favicon.
+
+The hero uses responsive sources and high fetch priority; below-the-fold illustrations load lazily. Page illustrations total about 137–157 KiB per visit depending on the chosen hero size. The social card is about 95 KiB and is not downloaded as part of the visible page.
+
+Set `og:image` and `twitter:image` in `index.html` to the absolute public URL of `images/social-preview.jpg` once the deployment address is known. They currently use a relative path; some social crawlers require an absolute URL.
+
+Generation prompts are recorded in [IMAGE-PROMPTS.md](IMAGE-PROMPTS.md).
 
 ## Interactive preview
 

@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#173e30">
   <meta name="description" content="Meet Sprout, a little reminder for a greener home. Simple plant watering reminders that fit your everyday life.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sprout">
+  <meta property="og:title" content="Sprout — Happy plants. Less guesswork.">
+  <meta property="og:description" content="A little care. A lot of green. Gentle watering reminders for your little jungle.">
+  <!-- Set both social image URLs to the absolute public URL when the deployment address is known. -->
+  <meta property="og:image" content="./images/social-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sprout: Happy plants. Less guesswork. A smiling potted plant being watered against a dark green background.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="./images/social-preview.jpg">
+  <meta name="twitter:image:alt" content="Sprout: Happy plants. Less guesswork. A smiling potted plant being watered against a dark green background.">
   <title>Sprout — A little care. A lot of green.</title>
   <link rel="icon" href="./images/sprout-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
@@ -32,7 +45,7 @@
       </div>
       <div class="hero-art">
         <div class="art-label"><span aria-hidden="true">✦</span> Room to grow</div>
-        <img class="hero-plant" src="./images/hero-plant-placeholder.svg" alt="Illustration of a leafy plant in a terracotta pot" width="600" height="640" fetchpriority="high">
+        <img class="hero-plant" src="./images/hero-plant-small.webp" srcset="./images/hero-plant-small.webp 600w, ./images/hero-plant.webp 900w" sizes="(min-width: 1224px) 502px, (min-width: 1000px) calc((100vw - 154px) / 2.1), (min-width: 650px) calc((100vw - 94px) / 2.1), calc(100vw - 40px)" alt="A watering can showers a leafy plant in a smiling cream pot" width="600" height="640" fetchpriority="high">
         <div class="plant-caption"><span class="status-dot"></span> Your greener days start here.</div>
         <span class="vertical-note" aria-hidden="true">GROW AT YOUR OWN PACE</span>
       </div>
@@ -43,9 +56,9 @@
     <section class="features wrap section-space" id="features" aria-labelledby="features-title">
       <div class="section-heading"><div><p class="eyebrow">Small nudges. Happy leaves.</p><h2 id="features-title">Plant care, without<br>the overthinking.</h2></div><p>You don’t need a green thumb.<br>Just a little rhythm.</p></div>
       <div class="feature-grid">
-        <article class="feature-card"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M10 13a6 6 0 0 1 12 0c0 8 3 8 3 10H7c0-2 3-2 3-10Z M13 27h6 M16 4v3"/></svg></span><span class="card-number">01</span><h3>A nudge, right on time</h3><p>Gentle watering reminders help your plants stay on your radar, even on your busiest days.</p></article>
-        <article class="feature-card"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 27V13 M16 20C5 21 5 10 5 10s11-1 11 10Zm0-5C16 4 27 5 27 5s1 11-11 10Z"/></svg></span><span class="card-number">02</span><h3>Every plant, its own pace</h3><p>A thirsty fern and a laid-back cactus? Give each plant a watering schedule that feels right.</p></article>
-        <article class="feature-card"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="6" y="7" width="20" height="21" rx="3"/><path d="M11 4v6 M21 4v6 M6 14h20 m-15 7 3 3 7-6"/></svg></span><span class="card-number">03</span><h3>A little less to remember</h3><p>Keep your plants and their last watering in one place. No mental notes. No forgotten windowsills.</p></article>
+        <article class="feature-card"><img class="feature-illustration" src="./images/feature-reminders.webp" width="600" height="400" alt="A leafy potted plant beside a smiling reminder bell and water droplets" loading="lazy" decoding="async"><span class="card-number">01</span><h3>A nudge, right on time</h3><p>Gentle watering reminders help your plants stay on your radar, even on your busiest days.</p></article>
+        <article class="feature-card"><img class="feature-illustration" src="./images/feature-pace.webp" width="600" height="400" alt="A lush fern and a small cactus with different amounts of water droplets above them" loading="lazy" decoding="async"><span class="card-number">02</span><h3>Every plant, its own pace</h3><p>A thirsty fern and a laid-back cactus? Give each plant a watering schedule that feels right.</p></article>
+        <article class="feature-card"><img class="feature-illustration" src="./images/feature-tracking.webp" width="600" height="400" alt="A plant-care notebook filled with checkmarks and water droplets beside a potted plant" loading="lazy" decoding="async"><span class="card-number">03</span><h3>A little less to remember</h3><p>Keep your plants and their last watering in one place. No mental notes. No forgotten windowsills.</p></article>
       </div>
     </section>
 
@@ -62,7 +75,7 @@
           <p class="demo-label"><span class="status-dot"></span> A little peek at Sprout</p>
           <div class="plant-card">
             <div class="plant-card-top"><span>YOUR LITTLE JUNGLE</span><span aria-hidden="true">✳</span></div>
-            <div class="demo-image"><img src="./images/demo-plant-placeholder.svg" width="320" height="230" alt="Illustration of Fernanda, a small potted fern" loading="lazy"></div>
+            <div class="demo-image"><img src="./images/demo-fern.webp" width="600" height="400" alt="Fernanda, a lush Boston fern in a cream ceramic pot" loading="lazy" decoding="async"></div>
             <div class="plant-card-heading"><div><h3>Fernanda</h3><p>Boston fern · Living room</p></div><span class="plant-tag">Fern</span></div>
             <div class="reminder" id="reminder-message" role="status" aria-live="polite"><span class="water-symbol" aria-hidden="true">♧</span><div><strong id="reminder-title">Time for a little drink</strong><p id="reminder-detail">Check the soil before you water.</p></div></div>
             <button class="button water-button" id="water-button" type="button" disabled><span id="water-button-label">Mark as watered</span><span aria-hidden="true">✓</span></button>
@@ -75,7 +88,7 @@
     </section>
 
     <section class="faq wrap section-space" id="faq" aria-labelledby="faq-title">
-      <div><p class="eyebrow">Good questions, naturally.</p><h2 id="faq-title">A little<br>growing clarity.</h2><img class="faq-sprig" src="./images/sprig-placeholder.svg" width="160" height="150" alt="" loading="lazy"></div>
+      <div><p class="eyebrow">Good questions, naturally.</p><h2 id="faq-title">A little<br>growing clarity.</h2></div>
       <div class="faq-list">
         <details><summary>Do I need to know anything about plants?<span aria-hidden="true">+</span></summary><p>No green thumb required. Sprout is designed to make the habit of checking your plants easier. Start with a care interval suited to your plant, then adjust as you get to know it.</p></details>
         <details><summary>Will all my plants have the same schedule?<span aria-hidden="true">+</span></summary><p>Nope. The idea is to give each plant its own interval, because a cactus and a fern have very different ideas about a good drink.</p></details>

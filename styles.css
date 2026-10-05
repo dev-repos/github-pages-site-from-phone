@@ -151,7 +151,8 @@ h3 {
   background:#e9eddf;
   border-radius:48% 48% 8px 8px;
   min-width:0;
-  isolation:isolate}
+  isolation:isolate;
+  overflow:hidden}
 .hero-plant {
   width:100%;
   max-height:540px;
@@ -226,25 +227,15 @@ h3 {
   border:1px solid var(--line);
   border-radius:12px;
   padding:27px}
-.feature-icon {
-  display:grid;
-  place-items:center;
-  width:45px;
-  height:45px;
-  background:var(--sage);
-  border-radius:50%;
-  margin-bottom:30px}
-.feature-icon svg {
-  width:27px;
-  height:27px;
-  fill:none;
-  stroke:currentColor;
-  stroke-width:1.5;
-  stroke-linecap:round;
-  stroke-linejoin:round}
+.feature-illustration {
+  width:100%;
+  aspect-ratio:3 / 2;
+  object-fit:contain;
+  border-radius:8px;
+  margin-bottom:24px}
 .card-number {
   position:absolute;
-  top:35px;
+  top:12px;
   right:27px;
   font-size:11px;
   letter-spacing:1px;
@@ -316,7 +307,8 @@ h3 {
   line-height:1}
 .demo-image {
   margin-block:15px;
-  background:#eef0e5;
+  background:var(--cream);
+  overflow:hidden;
   border-radius:10px}
 .demo-image img {
   width:100%;
@@ -387,8 +379,6 @@ h3 {
 .faq {
   display:grid;
   gap:20px}
-.faq-sprig {
-  display:none}
 .faq-list details {
   border-bottom:1px solid var(--line)}
 .faq-list details:first-child {
@@ -514,9 +504,6 @@ h1 {
 .faq {
   grid-template-columns:.85fr 1.15fr;
   gap:50px}
-.faq-sprig {
-  display:block;
-  opacity:.8}
 .closing {
   padding:55px 30px}
 .closing-flower {
