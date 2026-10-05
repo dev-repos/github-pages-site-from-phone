@@ -4,7 +4,11 @@ A mobile-first landing page for a fictional plant-watering app. Plain HTML, CSS,
 
 Open `index.html` directly, or run `python3 -m http.server 8000` from this folder and visit `http://localhost:8000`.
 
-For GitHub Pages, publish the branch containing these files from its root directory. All assets use relative paths, so the site also works at a project sub-folder URL.
+## Deployment
+
+The site is published at https://dev-repos.github.io/github-pages-site-from-phone/ by [the Pages workflow](.github/workflows/pages.yml) on every push to `main`. It can also be run manually from the Actions tab. In the repository's **Settings → Pages**, set **Source** to **GitHub Actions** once before the first deployment.
+
+The workflow stages only `index.html`, `styles.css`, `script.js`, and `images/` into the Pages artifact; `README.md` and `IMAGE-PROMPTS.md` are not published. No build step is needed. Assets use relative paths to work under the project URL.
 
 ## Images
 
@@ -18,7 +22,7 @@ The built-in image generation tool created the green-and-cream gouache illustrat
 
 The hero uses responsive sources and high fetch priority; below-the-fold illustrations load lazily. Page illustrations total about 137–157 KiB per visit depending on the chosen hero size. The social card is about 95 KiB and is not downloaded as part of the visible page.
 
-Set `og:image` and `twitter:image` in `index.html` to the absolute public URL of `images/social-preview.jpg` once the deployment address is known. They currently use a relative path; some social crawlers require an absolute URL.
+Open Graph and Twitter metadata use the absolute GitHub Pages URL for `images/social-preview.jpg`.
 
 Generation prompts are recorded in [IMAGE-PROMPTS.md](IMAGE-PROMPTS.md).
 
